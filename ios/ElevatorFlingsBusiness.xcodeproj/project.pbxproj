@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* ElevatorFlingsBusinessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ElevatorFlingsBusinessTests.m */; };
+		0C2CA7B428B99042002E4349 /* file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2CA7B328B99042002E4349 /* file.swift */; };
+		0C80B921A6F3F58F76C31292 /* libPods-ElevatorFlingsBusiness.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ElevatorFlingsBusiness.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		17F13FBE7099DDA1527AD461 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5109088BA618085E5FC827FA /* ExpoModulesProvider.swift */; };
+		4F2E25EF0782BDAE4BEDF224 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548DABC535D0282A8963F75F /* ExpoModulesProvider.swift */; };
+		7699B88040F8A987B510C191 /* libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		97550B20299AAF7000D8A1CF /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9D880A28D0CC9500C0ADD9 /* hermes.xcframework */; };
+		AC5B58E0D2094B6490C84672 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6E2C5B8796D14DAEA595627A /* OFL.txt */; };
+		13076B3019DB4F099805BAA6 /* SofiaProBlack-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B09B4A787D408680F6995D /* SofiaProBlack-Italic.ttf */; };
+		46A351573D7140BF94E01167 /* SofiaProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E87F44927240529054582F /* SofiaProBlack.ttf */; };
+		E6309191EC62402196C10941 /* SofiaProBold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0B98BA6B1F74ACB84FA94E1 /* SofiaProBold-Italic.ttf */; };
+		E72A6F0FAF094767BAF873BB /* SofiaProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC8AD06F2BD64C3A9EB1BADF /* SofiaProBold.ttf */; };
+		A5EDB8A797EC4387A9DB1733 /* SofiaProExtraLight-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F0119DC7D24471CACAB653F /* SofiaProExtraLight-Italic.ttf */; };
+		65223C8FF3694C97AE1D76BE /* SofiaProExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B66634513BCF48DCA23693F9 /* SofiaProExtraLight.ttf */; };
+		3B555F9978834E1B999CEC58 /* SofiaProLight-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD871AFB5954FFD9BD52799 /* SofiaProLight-Italic.ttf */; };
+		6928C72B10894059B736B9C4 /* SofiaProLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D51EA730D484320A8A1D734 /* SofiaProLight.ttf */; };
+		44BE0508F3484D8BB702C443 /* SofiaProMedium-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703B52EAE78246D98178A34B /* SofiaProMedium-Italic.ttf */; };
+		5AF8A2E37BB849BA8A5FB4A0 /* SofiaProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE46999DB76B4A61AFC436E8 /* SofiaProMedium.ttf */; };
+		40B57FEE67AF4626A6B43A72 /* SofiaProRegular-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55B6DEE540044B569AB054C4 /* SofiaProRegular-Italic.ttf */; };
+		12DDE758D7644C03949F1403 /* SofiaProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D926D1B9FDA24BF5B866CE00 /* SofiaProRegular.ttf */; };
+		AC0AA386DCD340B69BACA906 /* SofiaProSemiBold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB3979E8846545EF9A9C8D3A /* SofiaProSemiBold-Italic.ttf */; };
+		CBFFA2579F02467A9FD1DD25 /* SofiaProSemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99B6EC8E30FD4064AFE839CD /* SofiaProSemiBold.ttf */; };
+		1AF1B7E03F21417481503C72 /* SofiaProUltraLight-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 521649FA8CEF44288AC81EA0 /* SofiaProUltraLight-Italic.ttf */; };
+		5155A879DB01437E83EBB4B8 /* SofiaProUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6B0799017AD425DA0761915 /* SofiaProUltraLight.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = "ElevatorFlingsBusiness";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* ElevatorFlingsBusinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ElevatorFlingsBusinessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ElevatorFlingsBusinessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ElevatorFlingsBusinessTests.m"; sourceTree = "<group>"; };
+		0C2CA7B228B99042002E4349 /* ElevatorFlingsBusiness-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElevatorFlingsBusiness-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C2CA7B328B99042002E4349 /* file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file.swift; sourceTree = "<group>"; };
+		0C9D880A28D0CC9500C0ADD9 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
+		0CCFB17C28BC14D300ADC163 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		0CCFB17D28BC14D300ADC163 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		0CCFB17E28BC14D300ADC163 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		0CCFB17F28BC14D300ADC163 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		0CCFB18028BC14D300ADC163 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		0CCFB18128BC14D300ADC163 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		0CCFB18228BC14D300ADC163 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		0CCFB18328BC14D300ADC163 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		0CCFB18428BC14D300ADC163 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		0CCFB18528BC14D300ADC163 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		0CCFB18628BC14D300ADC163 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		0CCFB18728BC14D300ADC163 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		0CCFB18828BC14D300ADC163 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		0CCFB18928BC14D300ADC163 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		0CCFB18A28BC14D300ADC163 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		0CCFB18B28BC14D300ADC163 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ElevatorFlingsBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ElevatorFlingsBusiness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "ElevatorFlingsBusiness/AppDelegate.h"; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "ElevatorFlingsBusiness/AppDelegate.mm"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "ElevatorFlingsBusiness/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "ElevatorFlingsBusiness/Info.plist"; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "ElevatorFlingsBusiness/main.m"; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-ElevatorFlingsBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElevatorFlingsBusiness.debug.xcconfig"; path = "Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		5109088BA618085E5FC827FA /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		548DABC535D0282A8963F75F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ElevatorFlingsBusiness/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-ElevatorFlingsBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElevatorFlingsBusiness.release.xcconfig"; path = "Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.debug.xcconfig"; path = "Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-ElevatorFlingsBusiness.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ElevatorFlingsBusiness.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "ElevatorFlingsBusiness/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.release.xcconfig"; path = "Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6E2C5B8796D14DAEA595627A /* OFL.txt */ = {isa = PBXFileReference; name = "OFL.txt"; path = "../assets/fonts/OFL.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		50B09B4A787D408680F6995D /* SofiaProBlack-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProBlack-Italic.ttf"; path = "../assets/fonts/SofiaProBlack-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8E87F44927240529054582F /* SofiaProBlack.ttf */ = {isa = PBXFileReference; name = "SofiaProBlack.ttf"; path = "../assets/fonts/SofiaProBlack.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0B98BA6B1F74ACB84FA94E1 /* SofiaProBold-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProBold-Italic.ttf"; path = "../assets/fonts/SofiaProBold-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC8AD06F2BD64C3A9EB1BADF /* SofiaProBold.ttf */ = {isa = PBXFileReference; name = "SofiaProBold.ttf"; path = "../assets/fonts/SofiaProBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F0119DC7D24471CACAB653F /* SofiaProExtraLight-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProExtraLight-Italic.ttf"; path = "../assets/fonts/SofiaProExtraLight-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B66634513BCF48DCA23693F9 /* SofiaProExtraLight.ttf */ = {isa = PBXFileReference; name = "SofiaProExtraLight.ttf"; path = "../assets/fonts/SofiaProExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DD871AFB5954FFD9BD52799 /* SofiaProLight-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProLight-Italic.ttf"; path = "../assets/fonts/SofiaProLight-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D51EA730D484320A8A1D734 /* SofiaProLight.ttf */ = {isa = PBXFileReference; name = "SofiaProLight.ttf"; path = "../assets/fonts/SofiaProLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		703B52EAE78246D98178A34B /* SofiaProMedium-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProMedium-Italic.ttf"; path = "../assets/fonts/SofiaProMedium-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE46999DB76B4A61AFC436E8 /* SofiaProMedium.ttf */ = {isa = PBXFileReference; name = "SofiaProMedium.ttf"; path = "../assets/fonts/SofiaProMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55B6DEE540044B569AB054C4 /* SofiaProRegular-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProRegular-Italic.ttf"; path = "../assets/fonts/SofiaProRegular-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D926D1B9FDA24BF5B866CE00 /* SofiaProRegular.ttf */ = {isa = PBXFileReference; name = "SofiaProRegular.ttf"; path = "../assets/fonts/SofiaProRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB3979E8846545EF9A9C8D3A /* SofiaProSemiBold-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProSemiBold-Italic.ttf"; path = "../assets/fonts/SofiaProSemiBold-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99B6EC8E30FD4064AFE839CD /* SofiaProSemiBold.ttf */ = {isa = PBXFileReference; name = "SofiaProSemiBold.ttf"; path = "../assets/fonts/SofiaProSemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		521649FA8CEF44288AC81EA0 /* SofiaProUltraLight-Italic.ttf */ = {isa = PBXFileReference; name = "SofiaProUltraLight-Italic.ttf"; path = "../assets/fonts/SofiaProUltraLight-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6B0799017AD425DA0761915 /* SofiaProUltraLight.ttf */ = {isa = PBXFileReference; name = "SofiaProUltraLight.ttf"; path = "../assets/fonts/SofiaProUltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-ElevatorFlingsBusiness.a in Frameworks */,
+				97550B20299AAF7000D8A1CF /* hermes.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* ElevatorFlingsBusinessTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* ElevatorFlingsBusinessTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = "ElevatorFlingsBusinessTests";
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CCFB17B28BC14D300ADC163 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0CCFB17C28BC14D300ADC163 /* Fontisto.ttf */,
+				0CCFB17D28BC14D300ADC163 /* Octicons.ttf */,
+				0CCFB17E28BC14D300ADC163 /* Feather.ttf */,
+				0CCFB17F28BC14D300ADC163 /* Entypo.ttf */,
+				0CCFB18028BC14D300ADC163 /* FontAwesome5_Brands.ttf */,
+				0CCFB18128BC14D300ADC163 /* MaterialCommunityIcons.ttf */,
+				0CCFB18228BC14D300ADC163 /* AntDesign.ttf */,
+				0CCFB18328BC14D300ADC163 /* Foundation.ttf */,
+				0CCFB18428BC14D300ADC163 /* Ionicons.ttf */,
+				0CCFB18528BC14D300ADC163 /* FontAwesome5_Solid.ttf */,
+				0CCFB18628BC14D300ADC163 /* FontAwesome5_Regular.ttf */,
+				0CCFB18728BC14D300ADC163 /* FontAwesome.ttf */,
+				0CCFB18828BC14D300ADC163 /* Zocial.ttf */,
+				0CCFB18928BC14D300ADC163 /* EvilIcons.ttf */,
+				0CCFB18A28BC14D300ADC163 /* SimpleLineIcons.ttf */,
+				0CCFB18B28BC14D300ADC163 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* ElevatorFlingsBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				0C2CA7B328B99042002E4349 /* file.swift */,
+				0C2CA7B228B99042002E4349 /* ElevatorFlingsBusiness-Bridging-Header.h */,
+				0CCFB17B28BC14D300ADC163 /* Fonts */,
+			);
+			name = "ElevatorFlingsBusiness";
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C9D880A28D0CC9500C0ADD9 /* hermes.xcframework */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-ElevatorFlingsBusiness.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6245AD50149F6D35E59C5A08 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				BBC480F8514A04F0BEE6B197 /* ElevatorFlingsBusiness */,
+				F811844974AFCEBA512E110E /* ElevatorFlingsBusinessTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* ElevatorFlingsBusiness */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* ElevatorFlingsBusinessTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6245AD50149F6D35E59C5A08 /* ExpoModulesProviders */,
+				AFF444B188CD4B94A16895D9 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* ElevatorFlingsBusiness.app */,
+				00E356EE1AD99517003FC87E /* ElevatorFlingsBusinessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF444B188CD4B94A16895D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E2C5B8796D14DAEA595627A /* OFL.txt */,
+				50B09B4A787D408680F6995D /* SofiaProBlack-Italic.ttf */,
+				E8E87F44927240529054582F /* SofiaProBlack.ttf */,
+				A0B98BA6B1F74ACB84FA94E1 /* SofiaProBold-Italic.ttf */,
+				EC8AD06F2BD64C3A9EB1BADF /* SofiaProBold.ttf */,
+				4F0119DC7D24471CACAB653F /* SofiaProExtraLight-Italic.ttf */,
+				B66634513BCF48DCA23693F9 /* SofiaProExtraLight.ttf */,
+				1DD871AFB5954FFD9BD52799 /* SofiaProLight-Italic.ttf */,
+				8D51EA730D484320A8A1D734 /* SofiaProLight.ttf */,
+				703B52EAE78246D98178A34B /* SofiaProMedium-Italic.ttf */,
+				AE46999DB76B4A61AFC436E8 /* SofiaProMedium.ttf */,
+				55B6DEE540044B569AB054C4 /* SofiaProRegular-Italic.ttf */,
+				D926D1B9FDA24BF5B866CE00 /* SofiaProRegular.ttf */,
+				AB3979E8846545EF9A9C8D3A /* SofiaProSemiBold-Italic.ttf */,
+				99B6EC8E30FD4064AFE839CD /* SofiaProSemiBold.ttf */,
+				521649FA8CEF44288AC81EA0 /* SofiaProUltraLight-Italic.ttf */,
+				E6B0799017AD425DA0761915 /* SofiaProUltraLight.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BBC480F8514A04F0BEE6B197 /* ElevatorFlingsBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				548DABC535D0282A8963F75F /* ExpoModulesProvider.swift */,
+			);
+			name = "ElevatorFlingsBusiness";
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-ElevatorFlingsBusiness.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-ElevatorFlingsBusiness.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F811844974AFCEBA512E110E /* ElevatorFlingsBusinessTests */ = {
+			isa = PBXGroup;
+			children = (
+				5109088BA618085E5FC827FA /* ExpoModulesProvider.swift */,
+			);
+			name = ElevatorFlingsBusinessTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* ElevatorFlingsBusinessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ElevatorFlingsBusinessTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = ElevatorFlingsBusinessTests;
+			productName = ElevatorFlingsBusinessTests;
+			productReference = 00E356EE1AD99517003FC87E /* ElevatorFlingsBusinessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* ElevatorFlingsBusiness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ElevatorFlingsBusiness" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ElevatorFlingsBusiness";
+			productName = "ElevatorFlingsBusiness";
+			productReference = 13B07F961A680F5B00A75B9A /* ElevatorFlingsBusiness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ElevatorFlingsBusiness" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* ElevatorFlingsBusiness */,
+				00E356ED1AD99517003FC87E /* ElevatorFlingsBusinessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AC5B58E0D2094B6490C84672 /* OFL.txt in Resources */,
+				13076B3019DB4F099805BAA6 /* SofiaProBlack-Italic.ttf in Resources */,
+				46A351573D7140BF94E01167 /* SofiaProBlack.ttf in Resources */,
+				E6309191EC62402196C10941 /* SofiaProBold-Italic.ttf in Resources */,
+				E72A6F0FAF094767BAF873BB /* SofiaProBold.ttf in Resources */,
+				A5EDB8A797EC4387A9DB1733 /* SofiaProExtraLight-Italic.ttf in Resources */,
+				65223C8FF3694C97AE1D76BE /* SofiaProExtraLight.ttf in Resources */,
+				3B555F9978834E1B999CEC58 /* SofiaProLight-Italic.ttf in Resources */,
+				6928C72B10894059B736B9C4 /* SofiaProLight.ttf in Resources */,
+				44BE0508F3484D8BB702C443 /* SofiaProMedium-Italic.ttf in Resources */,
+				5AF8A2E37BB849BA8A5FB4A0 /* SofiaProMedium.ttf in Resources */,
+				40B57FEE67AF4626A6B43A72 /* SofiaProRegular-Italic.ttf in Resources */,
+				12DDE758D7644C03949F1403 /* SofiaProRegular.ttf in Resources */,
+				AC0AA386DCD340B69BACA906 /* SofiaProSemiBold-Italic.ttf in Resources */,
+				CBFFA2579F02467A9FD1DD25 /* SofiaProSemiBold.ttf in Resources */,
+				1AF1B7E03F21417481503C72 /* SofiaProUltraLight-Italic.ttf in Resources */,
+				5155A879DB01437E83EBB4B8 /* SofiaProUltraLight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElevatorFlingsBusiness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness/Pods-ElevatorFlingsBusiness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests/Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* ElevatorFlingsBusinessTests.m in Sources */,
+				17F13FBE7099DDA1527AD461 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				0C2CA7B428B99042002E4349 /* file.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				4F2E25EF0782BDAE4BEDF224 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* ElevatorFlingsBusiness */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ElevatorFlingsBusinessTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevatorFlingsBusiness.app/ElevatorFlingsBusiness";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ElevatorFlingsBusiness-ElevatorFlingsBusinessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "ElevatorFlingsBusinessTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElevatorFlingsBusiness.app/ElevatorFlingsBusiness";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ElevatorFlingsBusiness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTGH96PH97;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "ElevatorFlingsBusiness/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Elevator Flings - Business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.dev;
+				PRODUCT_NAME = "ElevatorFlingsBusiness";
+				SWIFT_OBJC_BRIDGING_HEADER = "ElevatorFlingsBusiness-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ElevatorFlingsBusiness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTGH96PH97;
+				INFOPLIST_FILE = "ElevatorFlingsBusiness/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Elevator Flings - Business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.dev;
+				PRODUCT_NAME = "ElevatorFlingsBusiness";
+				SWIFT_OBJC_BRIDGING_HEADER = "ElevatorFlingsBusiness-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ElevatorFlingsBusinessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ElevatorFlingsBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ElevatorFlingsBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

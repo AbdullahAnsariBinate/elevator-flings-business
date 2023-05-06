@@ -1,0 +1,3 @@
+interface FieldSecure {
+  secure: true
+}
