@@ -47,7 +47,8 @@ const MyprofileView = (props: MyprofileComponentTypes) => {
   }, [])
   return (
     <Containers.AuthContainer
-      marginV-20
+      marginB-20
+      marginT-50
       Content={
         <ScrollView showsVerticalScrollIndicator={false}>
           <View paddingV-20 paddingH-15 style={styles.containerMain}>

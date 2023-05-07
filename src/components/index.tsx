@@ -4,6 +4,7 @@ import { Text } from './core/text'
 import AuthContainer from './containers/auth.container'
 import AppContainer from './containers/app.container'
 import HomeConatiner from './containers/home.container'
+import CustomContainer from './containers/custom.container'
 
 import Form from './core/form'
 import Field from './core/field'
@@ -66,6 +67,7 @@ export const Containers = {
   AuthContainer,
   AppContainer,
   HomeConatiner,
+  CustomContainer
 }
 
 export default Components

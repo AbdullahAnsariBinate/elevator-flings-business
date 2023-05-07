@@ -35,8 +35,9 @@ const EventDetailView = (props: EventDetailComponentTypes) => {
     setIsModalVisible(!isModalVisible)
   }
   return (
-    <Containers.AuthContainer
-      marginT-30
+    <Containers.CustomContainer
+      marginT-60
+      marginB-10
       Content={
         <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
           <Carousel

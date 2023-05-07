@@ -31,7 +31,8 @@ const ChatListView = (props: ChatListComponentTypes) => {
   }, [])
 
   return (
-    <Containers.AppContainer
+    <Containers.CustomContainer
+    marginT-50
       Content={
         <View style={styles.scrollstyle}>
           <Searchbar

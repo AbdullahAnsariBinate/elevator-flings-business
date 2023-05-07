@@ -40,7 +40,6 @@ export const styles = StyleSheet.create({
     marginTop: 15,
   },
   request: {
-    paddingBottom: responsiveHeight(11),
     minHeight: 100,
     minWidth: 100,
   },

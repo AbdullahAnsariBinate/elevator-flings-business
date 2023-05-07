@@ -32,8 +32,7 @@ const ChatScreenView = (props: ChatScreenComponentTypes) => {
   }
 
   return (
-    <Containers.AppContainer
-      newPad={{ paddingBottom: responsiveHeight(0) }}
+    <Containers.CustomContainer
       Header={
         <Searchbar
           placeholder='Search'

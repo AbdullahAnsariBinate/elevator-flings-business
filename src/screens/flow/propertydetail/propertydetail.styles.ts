@@ -52,9 +52,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 5,
   },
-  container: {
-    marginBottom: responsiveHeight(8),
-  },
+
   centeredView: {
     flex: 1,
     justifyContent: 'center',

@@ -333,18 +333,18 @@ export const screens = generateRNNScreens(
     Temp: {
       component: Screens.flow.TempView,
       options: {
-        bottomTab: {
-          disableIconTint: false,
-          icon: icons.Plus,
-          text: 'Add',
-          iconColor: theme.color.lightPink,
-          textColor: theme.color.lightPink,
-          selectedIconColor: theme.color.pink,
-          selectedTextColor: theme.color.pink,
-        },
-        bottomTabs: {
-          backgroundColor: theme?.color?.white,
-        },
+        // bottomTab: {
+        //   disableIconTint: false,
+        //   icon: icons.Plus,
+        //   text: 'Add',
+        //   iconColor: theme.color.lightPink,
+        //   textColor: theme.color.lightPink,
+        //   selectedIconColor: theme.color.pink,
+        //   selectedTextColor: theme.color.pink,
+        // },
+        // bottomTabs: {
+        //   backgroundColor: theme?.color?.white,
+        // },
         topBar: {
           visible: true,
           title: {

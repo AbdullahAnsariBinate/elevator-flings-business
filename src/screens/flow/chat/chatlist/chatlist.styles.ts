@@ -3,7 +3,7 @@ import { theme } from '../../../../utils/constants'
 import { responsiveHeight } from 'react-native-responsive-dimensions'
 
 export const styles = StyleSheet.create({
-  scrollstyle: { marginTop: 10 },
+  scrollstyle: { marginTop: 10, paddingBottom:90 },
   chatlist: {
     flexDirection: 'row-reverse',
     paddingRight: 20,

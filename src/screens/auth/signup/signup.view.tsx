@@ -15,7 +15,7 @@ const SignupView = (props: SignupComponentTypes) => {
   const { componentId } = useStateContext<NavigationComponentProps>()
 
   const handleLogin = React.useCallback(() => {
-    screens.push(componentId, 'Otp')
+    screens.push(componentId, 'Login')
   }, [])
 
   const handleForgot = React.useCallback(() => {

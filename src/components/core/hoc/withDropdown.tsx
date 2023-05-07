@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
   picker: {
     height: 50,
     width: '100%',
-    color: theme?.color?.black
+    color: theme?.color?.fontBlack
   },
 })

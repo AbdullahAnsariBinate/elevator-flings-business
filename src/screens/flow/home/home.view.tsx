@@ -10,7 +10,7 @@ import EventPost from '../../../components/eventpost'
 import { data } from './data'
 import { FlatList } from 'react-native-gesture-handler'
 import { data2 } from './data2'
-import { ScrollView, Text, useWindowDimensions } from 'react-native'
+import { Modal, Pressable, ScrollView, Text, useWindowDimensions } from 'react-native'
 import { NavigationComponentProps } from 'react-native-navigation'
 import { useStateContext } from '../../../utils/help'
 import { screens } from '../..'
@@ -22,8 +22,8 @@ import { TouchableOpacity } from 'react-native'
 const HomeView = (props: HomeComponentTypes) => {
   const [searchQuery, setSearchQuery] = React.useState<string>('')
   const { componentId } = useStateContext<NavigationComponentProps>()
-
-
+  const [isModalVisible, setIsModalVisible] = React.useState(false)
+  const [isModalVisible2, setIsModalVisible2] = React.useState(false)
 
   const handleMessage = React.useCallback(() => {
     screens.push(componentId, 'ChatList')
@@ -31,7 +31,6 @@ const HomeView = (props: HomeComponentTypes) => {
   const handleNotification = React.useCallback(() => {
     screens.push(componentId, 'Notification')
   }, [])
-
 
   const handlePropertydetail = React.useCallback(() => {
     screens.push(componentId, 'PropertyDetail')
@@ -42,6 +41,19 @@ const HomeView = (props: HomeComponentTypes) => {
 
   const handleEventdetail = React.useCallback(() => {
     screens.push(componentId, 'EventDetail')
+  }, [])
+  const handleAdd = () => {
+    setIsModalVisible(!isModalVisible)
+  }
+  const handleEvent = React.useCallback(() => {
+    setIsModalVisible(!isModalVisible)
+
+    screens.push(componentId, 'AddNewEvent')
+  }, [])
+  const handleProperty = React.useCallback(() => {
+    setIsModalVisible(!isModalVisible)
+
+    screens.push(componentId, 'AddNewProperty')
   }, [])
 
   const FirstRoute = () => (
@@ -114,10 +126,17 @@ const HomeView = (props: HomeComponentTypes) => {
   )
 
   return (
-    <Containers.HomeConatiner
+    <Containers.CustomContainer
       Header={
-        <CustomHeader leftText='Home, John' msgPress={handleMessage} notiPress={handleNotification} />
-
+        <CustomHeader
+          leftText='Home, John'
+          msgPress={handleMessage}
+          notiPress={handleNotification}
+          icon1={icons.Message}
+          icon2={icons.Notification}
+          icon3={icons.Plus}
+          addPress={handleAdd}
+        />
       }
       Content={
         <>
@@ -136,6 +155,33 @@ const HomeView = (props: HomeComponentTypes) => {
             onIndexChange={setIndex}
             initialLayout={{ width: layout.width }}
           />
+          <Modal
+            animationType='fade'
+            transparent={true}
+            visible={isModalVisible}
+            onRequestClose={() => {
+              setIsModalVisible(!isModalVisible)
+            }}
+          >
+            <View style={styles.centeredView}>
+              <View style={styles.modalView}>
+                <Pressable style={[styles.button, styles.buttonClose]} onPress={handleEvent}>
+                  <Core.Text style={styles.textStyle}>Add New Event</Core.Text>
+                </Pressable>
+                <Pressable style={[styles.button, styles.buttonClose]} onPress={handleProperty}>
+                  <Core.Text style={styles.textStyle}>Add New Property</Core.Text>
+                </Pressable>
+                <View style={styles.cross}>
+                  <Pressable
+                    onPress={() => setIsModalVisible(!isModalVisible)}
+                    style={styles.crossBtn}
+                  >
+                    <FastImage source={icons?.CrossRed} style={styles.image} resizeMode='contain' />
+                  </Pressable>
+                </View>
+              </View>
+            </View>
+          </Modal>
         </>
       }
     />

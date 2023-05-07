@@ -33,11 +33,12 @@ const PropertyDetailView = (props: PropertyDetailComponentTypes) => {
   }
 
   return (
-    <Containers.AuthContainer
-      marginT-30
+    <Containers.CustomContainer
+      marginT-60
+
       Content={
         <ScrollView>
-          <View marginT-10 style={styles.container}>
+          <View marginT-10>
             <Carousel
               containerStyle={{
                 height: responsiveHeight(32),

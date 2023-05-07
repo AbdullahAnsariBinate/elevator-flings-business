@@ -41,7 +41,7 @@ export const App = () => Root(
 export const BottomTabActivity = () => Root(
  BottomTabs([
   Screen(screens.get('Home')),
-  Screen(screens.get('Temp')),
+  // Screen(screens.get('Temp')),
   Screen(screens.get('Myprofile')),
  ])
 );
