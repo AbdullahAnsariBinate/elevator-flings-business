@@ -14,6 +14,7 @@ import { theme } from '../../../utils/constants'
 import { FlashList } from '@shopify/flash-list'
 import Requests from '../../../components/requests'
 import { dummyData } from './dummy'
+import { CustomHeader } from '../../../components/customheader'
 
 const MyprofileView = (props: MyprofileComponentTypes) => {
   const [isEnabled, setIsEnabled] = React.useState(true)
@@ -45,13 +46,26 @@ const MyprofileView = (props: MyprofileComponentTypes) => {
   const handleLogout = React.useCallback(() => {
     screens.push(componentId, 'Login')
   }, [])
+
+  const handleMessage = React.useCallback(() => {
+    screens.push(componentId, 'ChatList')
+  }, [])
+  const handleEdit = React.useCallback(() => {
+    screens.push(componentId, 'EditMyprofile')
+  }, [])
   return (
-    <Containers.AuthContainer
+    <Containers.CustomContainer
       marginB-20
-      marginT-50
       Content={
         <ScrollView showsVerticalScrollIndicator={false}>
-          <View paddingV-20 paddingH-15 style={styles.containerMain}>
+          <CustomHeader
+            title='My Profile'
+            msgPress={handleMessage}
+            notiPress={handleEdit}
+            icon1={icons.Message}
+            icon2={icons.Edit}
+          />
+          <View paddingH-15>
             <View style={styles.container}>
               <View center>
                 <FastImage source={images.Profile3} style={styles.profile} resizeMode='contain' />
@@ -207,7 +221,7 @@ const MyprofileView = (props: MyprofileComponentTypes) => {
                 <Core.Text black bold large>
                   Block Profiles
                 </Core.Text>
-                <View paddingH-15 row width={'100%'} style={styles.request} paddingT-15>
+                <View row width={'100%'} style={styles.request} paddingT-15>
                   <FlashList data={dummyData} renderItem={renderItem} estimatedItemSize={70} />
                 </View>
                 <View style={styles.cross}>

@@ -24,7 +24,7 @@ export const CustomHeader: React.FC<Props> = memo(
   ({ title, back, leftText, backPress, msgPress, notiPress, icon1, icon2, icon3, addPress }: Props) => {
     return (
       <View style={styles.container}>
-        <View>
+        <View width={'33%'}  >
           {back && (
             <TouchableOpacity onPress={backPress}>
               <FastImage source={icons?.Back} style={styles.header} resizeMode='contain' />
@@ -36,14 +36,14 @@ export const CustomHeader: React.FC<Props> = memo(
             </Core.Text>
           )}
         </View>
-        <View>
+        <View width={'33%'} center>
           {title && (
             <Core.Text bold black large>
               {title}
             </Core.Text>
           )}
         </View>
-        <View style={styles.leftHeader}>
+        <View style={styles.leftHeader} width={'33%'} >
           <TouchableOpacity onPress={addPress}>
             <FastImage source={icon3} style={styles.icons} resizeMode='contain' />
           </TouchableOpacity>
@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
   },
   leftHeader: {
     flexDirection: 'row',
+    justifyContent:'flex-end',
     alignItems:'center'
   },
   icon: {

@@ -23,6 +23,7 @@ const SignupView = (props: SignupComponentTypes) => {
   }, [])
   return (
     <Containers.AuthContainer
+    marginT-10
       Header={
         <View center>
           <View width={120} style={styles.imagesContainer}>

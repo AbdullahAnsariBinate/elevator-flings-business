@@ -91,8 +91,9 @@ export const styles = StyleSheet.create({
     margin: 20,
     width: '80%',
     backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 25,
+    borderRadius: 10,
+    // padding: 25,
+    paddingVertical:25,
     alignItems: 'center',
     shadowColor: '#000',
     shadowOffset: {
@@ -158,4 +159,5 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     marginLeft: responsiveWidth(1),
   },
+  
 })

@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
   chatlist: {
     flexDirection: 'row-reverse',
     paddingRight: 20,
-    borderRadius: 15,
+    borderRadius: 15,  
     backgroundColor: theme.color.offWhite,
     marginHorizontal: 15,
   },

@@ -310,23 +310,23 @@ export const screens = generateRNNScreens(
           backButton: {
             visible: false,
           },
-          rightButtons: [
-            {
-              id: 'Component9',
-              component: {
-                id: 'HeaderRight2',
-                name: 'HeaderRight2',
-                passProps: {
-                  // componentId: 'Component9',
-                },
-              },
-            },
-          ],
-          visible: true,
-          title: {
-            text: 'My Profile',
-            alignment: 'center',
-          },
+          // rightButtons: [
+          //   {
+          //     id: 'Component9',
+          //     component: {
+          //       id: 'HeaderRight2',
+          //       name: 'HeaderRight2',
+          //       passProps: {
+          //         // componentId: 'Component9',
+          //       },
+          //     },
+          //   },
+          // ],
+          visible: false,
+          // title: {
+          //   text: 'My Profile',
+          //   alignment: 'center',
+          // },
         },
       },
     },
@@ -367,20 +367,20 @@ export const screens = generateRNNScreens(
             icon: Entypo.getImageSourceSync('chevron-left', 25),
             color: theme.color.pink,
           },
-          rightButtons: [
-            {
-              id: 'comp',
-              component: {
-                id: 'comp',
-                name: 'HeaderChat',
-              },
-            },
-          ],
-          visible: true,
-          title: {
-            text: 'Chat',
-            alignment: 'center',
-          },
+          // rightButtons: [
+          //   {
+          //     id: 'comp',
+          //     component: {
+          //       id: 'comp',
+          //       name: 'HeaderChat',
+          //     },
+          //   },
+          // ],
+          visible: false,
+          // title: {
+          //   text: 'Chat',
+          //   alignment: 'center',
+          // },
         },
       },
     },

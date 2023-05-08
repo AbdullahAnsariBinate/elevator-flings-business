@@ -23,6 +23,7 @@ const EditMyprofileView = (props: EditMyprofileComponentTypes) => {
 
   return (
     <Containers.AppContainer
+    paddingB-10
       Header={
         <View center>
           <View width={120} style={styles.imagesContainer}>

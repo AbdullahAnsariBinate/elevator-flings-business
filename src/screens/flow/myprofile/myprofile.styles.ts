@@ -33,9 +33,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 10,
   },
-  containerMain: {
-    paddingBottom: responsiveHeight(8),
-  },
+
   centeredView: {
     flex: 1,
     justifyContent: 'center',
@@ -47,7 +45,7 @@ export const styles = StyleSheet.create({
     margin: 20,
     width: '92%',
     backgroundColor: 'white',
-    borderRadius: 20,
+    borderRadius: 10,
     paddingHorizontal:15,
     paddingBottom:20,
     paddingTop: 30,

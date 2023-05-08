@@ -29,11 +29,10 @@ export const styles = StyleSheet.create({
   },
   modalView: {
     margin: 20,
-    width: '80%',
+    width: '90%',
     backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 25,
-    alignItems: 'center',
+    borderRadius: 10,
+    paddingVertical:25,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -97,5 +96,9 @@ export const styles = StyleSheet.create({
     borderColor: theme.color.black,
     borderWidth: 2,
     marginLeft: responsiveWidth(1),
+  },
+    request: {
+    minHeight: 350,
+    minWidth: 100,
   },
 })

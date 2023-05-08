@@ -10,13 +10,17 @@ import { Message } from './Dummydata'
 import { MacroChat } from '../../../../components/chat/macrochat'
 import CustomSender from '../../../../components/chat/customsender'
 import { Searchbar } from 'react-native-paper'
-import { icons } from '../../../../../assets/images'
+import { icons, images } from '../../../../../assets/images'
 import FastImage from 'react-native-fast-image'
 import { styles } from './chatscreen.styles'
-import { responsiveHeight } from 'react-native-responsive-dimensions'
 import { FlashList } from '@shopify/flash-list'
+import { CustomHeader } from '../../../../components/customheader'
+import { screens } from '../../..'
+import { dummyData } from './dummy'
+import Requests from '../../../../components/requests'
 
 const ChatScreenView = (props: ChatScreenComponentTypes) => {
+
   const [searchQuery, setSearchQuery] = React.useState<string>('')
   const [isModalVisible, setIsModalVisible] = React.useState(false)
 
@@ -27,20 +31,31 @@ const ChatScreenView = (props: ChatScreenComponentTypes) => {
   const renderItem1 = ({ item }: any) => {
     return <MacroChat msg={item?.msg} />
   }
-  const handleVisible = () => {
+  const handleSetting = () => {
     setIsModalVisible(!isModalVisible)
+  }
+  const renderItem4 = ({ item }: any) => {
+    return <Requests imgs={item?.img} btn name2='Block User' name='Reject User' />
   }
 
   return (
     <Containers.CustomContainer
       Header={
-        <Searchbar
-          placeholder='Search'
-          onChangeText={onChangeSearch}
-          value={searchQuery}
-          style={styles.search}
-          icon={() => <FastImage source={icons.Search} style={styles.img} resizeMode='contain' />}
-        />
+        <>
+          <CustomHeader
+            title='Chat'
+            msgPress={handleSetting}
+            icon1={icons.Setting}
+            icon2={images.Profile2}
+          />
+          <Searchbar
+            placeholder='Search'
+            onChangeText={onChangeSearch}
+            value={searchQuery}
+            style={styles.search}
+            icon={() => <FastImage source={icons.Search} style={styles.img} resizeMode='contain' />}
+          />
+        </>
       }
       Content={
         <ScrollView>
@@ -65,22 +80,10 @@ const ChatScreenView = (props: ChatScreenComponentTypes) => {
           >
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Core.Text black bold>
-                  Are you sure?
-                </Core.Text>
-                <Core.Text black regular marginT-20 center>
-                  Do you really want to delete the lorem ipsum property? This process cannot be
-                  undone.
-                </Core.Text>
-                <View row centerV marginT-20>
-                  <TouchableOpacity style={styles.btn} onPress={handleVisible}>
-                    <Core.Text white>Accept</Core.Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity style={styles.btn1} onPress={handleVisible}>
-                    <Core.Text black>Reject</Core.Text>
-                  </TouchableOpacity>
+                <Core.Text center bold black large marginB-15>User list</Core.Text>
+                <View paddingH-15 style={styles.request}>
+                  <FlashList data={dummyData} renderItem={renderItem4} estimatedItemSize={70} />
                 </View>
-                <Core.Text style={styles.textStyle}>Done</Core.Text>
                 <View style={styles.cross}>
                   <Pressable
                     onPress={() => setIsModalVisible(!isModalVisible)}
